@@ -28,11 +28,11 @@ export default function PricingTable() {
                   <li>✓ 1 Month Free Support</li>
                 </ul>
               </div>
-             <Link to={'/application'}>
+             {/* <Link to={'/application'}>
              <button className="mt-6 w-full bg-white border border-green-600 text-green-600 font-semibold py-2 rounded-lg hover:bg-green-50">
               Choose Plan
               </button>
-             </Link>
+             </Link> */}
             </div>
   
             {/* Green Plan */}
@@ -53,9 +53,9 @@ export default function PricingTable() {
                   <li>✓ Performance Optimization</li>
                 </ul>
               </div>
-              <Link to={'/application'}>
+              {/* <Link to={'/application'}>
               <button className="mt-6 w-full bg-white text-green-600 font-semibold py-2 rounded-lg hover:bg-green-100">Choose Plan</button>
-              </Link>
+              </Link> */}
             </div>
   
             {/* Enterprise Plan */}
@@ -72,9 +72,9 @@ export default function PricingTable() {
                   <li>✓ Up to 50 users</li>
                 </ul>
               </div>
-        <Link to={'/application'}>
+        {/* <Link to={''}>
         <button className="mt-6 w-full bg-white border border-green-600 text-green-600 font-semibold py-2 rounded-lg hover:bg-green-50">Choose Plan</button>
-        </Link>
+        </Link> */}
             </div>
           </div>
         </div>

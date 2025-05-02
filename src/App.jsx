@@ -24,6 +24,7 @@ import AdminPage from "./pages/AdminPage";
 import BlogDetails from "./components/BlogDetails";
 import PublicBlogList from "./components/PublicBlogList";
 import Portfolio from "./components/Hooks/Portfolio";
+import CareerPage from "./pages/Careers";
 
 
 const App = () => {
@@ -405,6 +406,7 @@ const App = () => {
                         <Route path="/admin" element={<AdminPage details={siteData} firebase={firebase}/> } />
                         <Route path="/blogs/:postID" element={<BlogDetails firebase={firebase}/> } />
                         <Route path="/blogs" element={<PublicBlogList firebase={firebase}/> } />
+                        <Route path="/careers" element={<CareerPage firebase={firebase}/> } />
 
                         <Route path="*" element={<NotFoundPage darkMode={darkMode} />} />
                     </Routes>
