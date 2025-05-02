@@ -7,7 +7,7 @@ function Contact() {
    <div>
      <Roll triggerOnce>
         <h2 className="section-title space-x-4 pt-4">
-          <span>Tell  Help You </span>
+          <span>Tell   </span>
           <span>
             <Typewriter
               words={["Us How We Can "]}
@@ -18,7 +18,7 @@ function Contact() {
               delaySpeed={1000}
             />
           </span>
-          <span>You</span>
+          <span>Help You</span>
         </h2>
         
       </Roll>
