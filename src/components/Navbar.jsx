@@ -128,11 +128,11 @@ const Navbar = ({siteData}) => {
                             Team
                         </Link>
                     </li>
-                    <li>
+                    {/* <li>
                         <Link to="/application" className="navbar-item">
                             Application
                         </Link>
-                    </li>
+                    </li> */}
                 </ul>
 
                 {/* Call to Action Button */}

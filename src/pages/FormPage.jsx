@@ -85,8 +85,8 @@ const Application = ({ details = {}, firebase }) => {
 
             // Send email via EmailJS
             await emailjs.send(
-                'service_q4mz69g', // Service ID
-                'template_motnhd9', // Template ID
+                'service_y9g4yya', // Service ID
+                'template_qk7nmza', // Template ID
                 {
                     from_name: formData.name,
                     email: formData.email,

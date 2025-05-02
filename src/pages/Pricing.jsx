@@ -1,97 +1,83 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
-const PricingPage = () => {
+export default function PricingTable() {
     return (
-        <div className="w-10/12 mx-auto max-lgp-6">
-            <div className="text-center">
-                <p className="text-lg mb-4">
-                    Our pricing is tailored based on the specific needs of your project, including factors like project complexity,
-                    desired features, required functionality, and the scale of the project.
-                    We understand that each business has unique requirements, so we provide custom quotes to ensure you get the
-                    most value for your investment.
-                </p>
-            </div>
-
-            <div className="bg-gray-50 py-16 px-4 mb-6 rounded-lg shadow-lg">
-                <h2 className="text-2xl font-semibold text-center mb-4">Pricing Breakdown</h2>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-
-                    {/* Basic Plan */}
-                    <div className="bg-white p-8 rounded-lg shadow-lg">
-                        <h3 className="text-xl font-bold mb-2 text-green-700">Basic Plan</h3>
-                        <p className="text-gray-700 mb-2 text-justify">
-                            Perfect for individuals or startups looking for a small digital presence. Originally priced at $250,
-                            now available for <span className="text-green-600 font-semibold">$199</span> (Limited Time Offer).
-                        </p>
-                        <ul className="list-disc list-inside text-gray-700">
-                            <li>Up to 5 pages</li>
-                            <li>Responsive design</li>
-                            <li>Basic animations</li>
-                            <li>Contact form integration</li>
-                            <li>Delivery in 1 week</li>
-                        </ul>
-                    </div>
-
-                    {/* Green Plan */}
-                    <div className="bg-white p-8 rounded-lg shadow-lg border border-green-500">
-                        <h3 className="text-xl font-bold mb-2 text-green-800">Green Plan</h3>
-                        <p className="text-gray-700 mb-2 text-justify">
-                            Ideal for growing businesses that require more content and features. Originally priced at $500,
-                            now available for <span className="text-green-600 font-semibold">$399</span>.
-                        </p>
-                        <ul className="list-disc list-inside text-gray-700">
-                            <li>Up to 7 pages</li>
-                            <li>Custom UI/UX design</li>
-                            <li>Responsive & accessible</li>
-                            <li>SEO optimization</li>
-                            <li>Basic admin dashboard</li>
-                            <li>Blog or dynamic content support</li>
-                            <li>Delivery in 1.5–2 weeks</li>
-                        </ul>
-                    </div>
-
-                    {/* Enterprise Projects */}
-                    <div className="bg-white p-8 rounded-lg shadow-lg">
-                        <h3 className="text-xl font-bold mb-2">Enterprise Projects</h3>
-                        <p className="text-gray-700 mb-2 text-justify">
-                            Tailored for large-scale projects including enterprise-level web platforms, complex mobile applications,
-                            and SaaS solutions. Prices start at $5000.
-                        </p>
-                        <ul className="list-disc list-inside">
-                            <li>Custom integrations</li>
-                            <li>Advanced user features</li>
-                            <li>Ongoing support & maintenance</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div className="text-left my-6">
-                <h2 className="text-2xl font-semibold mt-16 mb-8 text-center">Factors That Affect Pricing</h2>
-                <p className="text-lg mb-4 max-w-2xl w-full mx-auto">
-                    The final cost of your project may vary based on the following factors:
-                </p>
-                <ul className="list-disc list-inside text-lg mx-auto max-w-2xl w-full text-justify">
-                    <li><span className="font-bold">Project Complexity:</span> More complex projects require more time and expertise.</li>
-                    <li><span className="font-bold">Features & Functionality:</span> The more features and custom functionalities you need, the higher the price.</li>
-                    <li><span className="font-bold">Design Requirements:</span> Custom designs, animations, and user experience enhancements can affect the pricing.</li>
-                    <li><span className="font-bold">Development Time:</span> Shorter timelines may increase the cost due to expedited development.</li>
-                    <li><span className="font-bold">Technology Stack:</span> The choice of technology can influence both the complexity and the cost of your project.</li>
+        <div className="min-h-screen bg-gray-100 py-12 px-4">
+        <div className="max-w-6xl mx-auto text-center">
+          <h2 className="text-4xl font-bold mb-2">Choose Your Plan</h2>
+          <p className="text-gray-500 mb-6">No contracts, no surprise fees.</p>
+          <div className="inline-flex bg-white shadow-lg rounded-full p-1 mb-10">
+            <button className="bg-green-600 text-white px-6 py-2 rounded-full font-semibold">Monthly</button>
+            <button className="px-6 py-2 text-gray-700">Yearly</button>
+          </div>
+  
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Basic Plan */}
+            <div className="bg-white rounded-xl shadow-lg p-8 flex flex-col justify-between">
+              <div>
+                <div className="w-4 h-4 bg-green-300 rounded-full mx-auto mb-4"></div>
+                <h3 className="text-xl font-semibold mb-2">Basic</h3>
+                <p className="text-3xl font-bold mb-2 line-through text-gray-400">$250</p>
+                <p className="text-3xl font-bold mb-2">$199 <span className="text-sm font-normal text-gray-500">/Offer</span></p>
+                <p className="text-gray-500 mb-6">Perfect for getting started with a simple website.</p>
+                <ul className="text-gray-700 space-y-2 text-left">
+                  <li>✓ 5 Custom Pages</li>
+                  <li>✓ Responsive Design</li>
+                  <li>✓ Basic SEO Setup</li>
+                  <li>✓ Contact Form Integration</li>
+                  <li>✓ 1 Month Free Support</li>
                 </ul>
+              </div>
+             <Link to={'/application'}>
+             <button className="mt-6 w-full bg-white border border-green-600 text-green-600 font-semibold py-2 rounded-lg hover:bg-green-50">
+              Choose Plan
+              </button>
+             </Link>
             </div>
-
-            <div className="text-justify max-w-2xl w-full mx-auto">
-                <p className="text-lg mb-6">
-                    We understand that every project is unique, which is why we offer tailored pricing based on your specific
-                    requirements. Our goal is to ensure you get the best value for your investment.
-                </p>
-                <p className="text-xl text-center font-bold">
-                    For a detailed quote and personalized consultation, please <Link to={`/contact`} className="text-blue-500">contact our team</Link>.
-                </p>
+  
+            {/* Green Plan */}
+            <div className="bg-green-700 text-white rounded-xl shadow-lg p-8 flex flex-col justify-between scale-105">
+              <div>
+                <div className="w-4 h-4 bg-white rounded-full mx-auto mb-4"></div>
+                <h3 className="text-xl font-semibold mb-2">Green</h3>
+                <p className="text-3xl font-bold mb-2 line-through text-purple-200">$500</p>
+                <p className="text-3xl font-bold mb-2">$399 <span className="text-sm font-normal text-purple-200">/Offer</span></p>
+                <p className="text-purple-100 mb-6">Our most popular plan with enhanced features.</p>
+                <ul className="space-y-2 text-left">
+                  <li>✓ 7 Custom Pages</li>
+                  <li>✓ Responsive Design</li>
+                  <li>✓ Advanced SEO Setup</li>
+                  <li>✓ Blog Integration</li>
+                  <li>✓ Contact & Booking Form</li>
+                  <li>✓ 3 Months Premium Support</li>
+                  <li>✓ Performance Optimization</li>
+                </ul>
+              </div>
+              <Link to={'/application'}>
+              <button className="mt-6 w-full bg-white text-green-600 font-semibold py-2 rounded-lg hover:bg-green-100">Choose Plan</button>
+              </Link>
             </div>
+  
+            {/* Enterprise Plan */}
+            <div className="bg-white rounded-xl shadow-lg p-8 flex flex-col justify-between">
+              <div>
+                <div className="w-4 h-4 bg-green-300 rounded-full mx-auto mb-4"></div>
+                <h3 className="text-xl font-semibold mb-2">Enterprise</h3>
+                <p className="text-3xl font-bold mb-2">$159 <span className="text-sm font-normal text-gray-500">/Month</span></p>
+                <p className="text-gray-500 mb-6">For larger business or those seeking advanced services.</p>
+                <ul className="text-gray-700 space-y-2 text-left">
+                  <li>✓ Unlimited sending</li>
+                  <li>✓ Email marketing</li>
+                  <li>✓ Send newsletters</li>
+                  <li>✓ Up to 50 users</li>
+                </ul>
+              </div>
+        <Link to={'/application'}>
+        <button className="mt-6 w-full bg-white border border-green-600 text-green-600 font-semibold py-2 rounded-lg hover:bg-green-50">Choose Plan</button>
+        </Link>
+            </div>
+          </div>
         </div>
+      </div>
     );
-};
-
-export default PricingPage;
+  }
