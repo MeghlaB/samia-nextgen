@@ -11,41 +11,44 @@
     "linkedin": "",
     "whatsApp":"",
     "services": [
-        {
-            "title": "Web Development",
-            "description": "Building responsive and high-quality web applications.",
-            "image": "https://i.pinimg.com/originals/bb/37/5c/bb375cdd655184ca2715ac5059e73651.gif"
-        },
-        {
-            "title": "Mobile App Development",
-            "description": "Creating user-friendly and efficient mobile applications.",
-            "image": "https://img.flexifunnels.com/images/201/MobileAppDevelopment_a3ote_1000.gif"
-        },
-        {
-            "title": "UI/UX Design",
-            "description": "Designing intuitive and engaging user interfaces.",
-            "image": "https://indoanalytica.com/static/images/Web-design-5.gif"
-        },
-        {
-            "title": "Graphics Design",
-            "description": "Creating visually appealing and user-friendly graphic elements",
-            "image": "https://www.globaldezigns.com/images/Flyers-Posters-Designing-page.gif"
-        },
-        {
-            "title": "Video Editing",
-            "description": "Transforming raw footage into compelling and engaging videos",
-            "image": "https://imagepphcloud.thepaper.cn/pph/image/115/272/167.gif"
-        },
-        {
-            "title": "Custom Application Development",
-            "description": "Providing end-to-end solutions for building and scaling custom applications tailored to specific business needs, ensuring a seamless user experience and high performance.",
-            "image": "https://i.giphy.com/qgQUggAC3Pfv687qPC.webp"
-        },
-        {
-            "title": "CRM Management System",
-            "description": "Helping businesses manage customer relationships effectively by automating processes, tracking interactions, and providing insightful data to enhance decision-making and customer satisfaction.",
-            "image": "https://i0.wp.com/www.intechspace.com/wp-content/uploads/2023/01/CRM-animation-3.gif?w=1200&ssl=1"
-        }
+        
+            {
+              "title": "Web Development",
+              "description": "Building responsive and high-quality web applications.",
+              "image": "https://i.pinimg.com/originals/bb/37/5c/bb375cdd655184ca2715ac5059e73651.gif"
+            },
+            {
+              "title": "Mobile App Development",
+              "description": "Creating user-friendly and efficient mobile applications.",
+              "image": "https://img.flexifunnels.com/images/201/MobileAppDevelopment_a3ote_1000.gif"
+            },
+            {
+              "title": "UI/UX Design",
+              "description": "Designing intuitive and engaging user interfaces.",
+              "image": "https://indoanalytica.com/static/images/Web-design-5.gif"
+            },
+            {
+              "title": "Graphics Design",
+              "description": "Creating visually appealing and user-friendly graphic elements.",
+              "image": "https://www.globaldezigns.com/images/Flyers-Posters-Designing-page.gif"
+            },
+            {
+              "title": "Video Editing",
+              "description": "Transforming raw footage into compelling and engaging videos.",
+              "image": "https://imagepphcloud.thepaper.cn/pph/image/115/272/167.gif"
+            },
+            {
+              "title": "Custom Application Development",
+              "description": "Building custom apps tailored to business needs with smooth performance.",
+              "image": "https://i.giphy.com/qgQUggAC3Pfv687qPC.webp"
+            },
+            {
+              "title": "CRM Management System",
+              "description": "Developing tools to manage customer relationships efficiently.",
+              "image": "https://i0.wp.com/www.intechspace.com/wp-content/uploads/2023/01/CRM-animation-3.gif?w=1200&ssl=1"
+            }
+          
+          
     ],
     "testimonials": [
         {

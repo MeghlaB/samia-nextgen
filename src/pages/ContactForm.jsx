@@ -22,10 +22,10 @@ export default function ContactForm({ details = [] }) {
 
     emailjs
       .send(
-        "service_q4mz69g",     // <-- Replace this
-        "template_motnhd9",    // <-- Replace this
+        "service_q4mz69g",    
+        "template_motnhd9",    
         templateParams,
-        "hDzqQtESw86Hp0onJ"      // <-- Replace this
+        "hDzqQtESw86Hp0onJ"      
       )
       .then(
         (response) => {
