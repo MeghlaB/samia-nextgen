@@ -394,10 +394,10 @@ const App = () => {
                             </section>
                         } />
 
-                        <Route path="/pricing" element={
+                        <Route path="/pricing/:id" element={
                             <section id="contact" className="p-8 pt-16 mt-16">
                                 <div className="section-title mb-8">About Pricing & Subscriptions</div>
-                                <PricingPage />
+                                <PricingPage  details={siteData}/>
                             </section>
                         } />
 

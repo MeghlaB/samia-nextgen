@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 
 const FooterSection = ({ siteData = [] }) => {
-    console.log(siteData.services)
+    // console.log(siteData.services)
     return (
         <div
             className="footer-section bg-cover bg-center text-gray-500 py-12"

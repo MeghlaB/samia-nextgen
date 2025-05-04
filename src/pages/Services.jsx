@@ -5,6 +5,7 @@ import { CgArrowAlignV } from "react-icons/cg";
 import { AiOutlineArrowRight } from "react-icons/ai";
 
 export default ({ details = {} }) => {
+  console.log(details);
   return (
     <>
       <Services />
@@ -13,7 +14,10 @@ export default ({ details = {} }) => {
           details.services.map((service, index) => (
             <JackInTheBox cascade key={index}>
               <Link
-                to={`/pricing`}
+                to={{
+                  pathname: `/pricing/${service.id}`,
+    state: { details: service } 
+                }}
                 className="!block text-center shadow-lg p-6 rounded-lg border border-gray-300 transform hover:scale-105 transition-transform duration-300 hover:shadow-[0_0_5px_theme(colors.primary.DEFAULT),0_0_20px_theme(colors.primary.DEFAULT)] hover:cursor-pointer group relative"
               >
                 <div className="!absolute mx-4 inset-0 !flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
