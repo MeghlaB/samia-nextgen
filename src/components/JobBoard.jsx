@@ -7,7 +7,7 @@ const JobBoard = () => {
   const [jobs, setJobs] = useState([]);
 
   useEffect(() => {
-    fetch("/src/assets/jobs.json")
+    fetch("/jobs.json")
       .then((res) => res.json())
       .then((data) => setJobs(data));
   }, []);
@@ -44,7 +44,7 @@ const JobBoard = () => {
             <div className="mb-4">
               <h3 className="text-xl font-semibold  mb-1">{job.title}</h3>
               <p className="text-sm text-gray-700">
-                📍 {job.location} &nbsp; | &nbsp; 🕒 {job.type}
+                 {job.location} &nbsp; | &nbsp;  {job.type}
               </p>
             </div>
 

@@ -8,33 +8,33 @@ const teamMembers = [
   {
     name: "Mubaswira Rahman Samiha",
     role: "Team Lead & Web Developer",
-    image:samihaImg,
+    image: samihaImg,
     description:
-      "Experienced leader with 10+ years in tech, specializing in full-cycle solutions, clean architecture, and seamless project coordination.",
+      "As a MERN Stack Developer skilled in building scalable web applications. Leads teams, manages timelines, and ensures smooth project coordination to deliver quality solutions aligned with business goals.",
   },
   {
     name: "Md. Arif Hassan",
     role: "Web Developer",
     image: arifImg,
-    description: "Builds scalable full-stack apps with React, Next.js, and Firebase, focusing on clean code, Web Developer, and seamless user experiences."
+    description:
+      "MERN Stack Developer focused on crafting full-stack applications with React, Next.js, and Firebase. Combines clean code with responsive design to build impactful and scalable digital products.",
   },
-  
   {
     name: "Meghla Biswas",
     role: "Junior Developer",
-    image:meghlaImg,
+    image: meghlaImg,
     description:
-      "Focused on crafting responsive, user-friendly interfaces with modern tools like React.js and Tailwind CSS.",
+      "Front End Developer with skills in React.js and JavaScript. Dedicated to building responsive, user-friendly web apps with a strong focus on performance, accessibility, and continuous learning.",
   },
 ];
 
 const TeamPage = () => {
   return (
     <div className="w-10/12 mx-auto max-lg:p-6">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
         {teamMembers.map((member, index) => (
           <JackInTheBox key={index}>
-            <div className="text-center shadow-lg p-6 rounded-lg border border-gray-300 border-primary transform hover:scale-105 transition-transform duration-300 hover:shadow-[0_0_5px_theme(colors.primary.DEFAULT),0_0_20px_theme(colors.primary.DEFAULT)] hover:cursor-pointer min-h-[425px] ">
+            <div className="flex flex-col justify-between h-full text-center shadow-lg p-6 rounded-lg border border-gray-300 border-primary transform hover:scale-105 transition-transform duration-300 hover:shadow-[0_0_5px_theme(colors.primary.DEFAULT),0_0_20px_theme(colors.primary.DEFAULT)] hover:cursor-pointer">
               <img
                 src={member?.image}
                 alt={member.name}
